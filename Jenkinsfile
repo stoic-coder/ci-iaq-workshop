@@ -19,7 +19,7 @@ pipeline {
             steps {
               sh 'ansible-galaxy collection install -r requirements.yml'
               // hier sollen die Playbooks laufen
-              sh 'ansible-playbook -i inventory/test.hcloud.yml installhero-app.yml'
+              sh 'ansible-playbook -i inventory/test.hcloud.yml install-hero-app.yml'
             }
         }
     }
