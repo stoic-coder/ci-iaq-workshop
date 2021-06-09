@@ -1,4 +1,4 @@
-- hosts: ansible-test-reddralf
+- hosts: ansible-test-redralf
   become: true
   tasks:
     - name: add apt key
