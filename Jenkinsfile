@@ -9,6 +9,8 @@ pipeline {
         stage('Lint Ansible Playbook') {
             steps {
               // ansible lint hinzufügen
+              sh 'pip3 install "ansible-lint[yamllint]"'
+              sh 'ansible-lint install-hero-app.yml'
             }
         }
         stage('Start Test VM') {
